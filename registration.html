@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
 <header>
-    <img src="img/logo1.png" alt="logo" class="logo"> <span>Интеренет магазин электроники</span>
+    <img src="img/logo1.png" alt="logo" class="logo"> <span class="logo__span">Интеренет магазин электроники</span>
     <ul class="menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html" target="_blank">Каталог</a></li>
@@ -16,39 +19,64 @@
     </ul>
 </header>
 <hr>
+<main>
+    <h1 class="short__h1">Регистрация</h1>
+    <div class="container">
+        <form class="inp" action="#">
+            <div class="inp__wrapper">
+                <div class="inp__labels">
+                    <label for="mainName">Ваше имя:</label>
+                    <label for="email">Ваш e-mail:</label>
+                    <label for="pass">Пароль:</label>
+                    <label for="number">Ваше телефон:</label>
+                </div>
+                <div class="inp__inputs">
+                    <input type="text" id="mainName" name="mainName" placeholder="Ваше имя">
+                    <input type="email" name="email" placeholder="xxx@ya.ru" id="email">
+                    <input type="password" id="pass" name="pass" placeholder="Пароль">
+                    <input type="number" id="number" name="number" placeholder="8-999-999-99-99">
+                </div>
+            </div>
+            Нам нужно узнать о вас как можно больше!<br>
+            Ваш любимый цвет:
+            <select>
+                <option value="GR">Зеленый</option>
+                <option value="RE">Красный</option>
+                <option value="BL">Синий</option>
+            </select><br>
+            Ваш пол: <br>
+            <div class="sex__radio">
+                <div class="sex__radio-men">
+                    <label for="men">Mужчина</label><input id="men" type="radio" name="pol" checked>
+                </div>
+                <div class="sex__radio-men">
+                    <label for="women">Женщина</label><input id="women" type="radio" name="pol">
+                </div>
+            </div>
 
-<body>
+            Ваши увлечения: <br>
+            <div class="interests">
+                <div class="interests__part">
+                    <label for="sport">Спорт</label>
+                    <label for="IT">IT</label>
+                    <label for="music">Музыка</label>
+                </div>
+                <div class="interests__part">
+                    <input id="sport" name="sport" type="checkbox">
+                    <input id="IT" name="IT" type="checkbox">
+                    <input id="music" name="music" type="checkbox">
+                </div>
+            </div>
 
-<h1>Регистрация</h1>
-<form class="inp" action="#">
-    <label for="mainName">Ваше имя:</label>
-    <input type="text" name="mainName" placeholder="Ваше имя"><br>
-    <label for="email">Ваш e-mail:</label>
-    <input type="email" name="email" placeholder="xxx@ya.ru" id="email"><br>
-    <label for="pass">Пароль:</label>
-    <input type="password" name="pass" placeholder="Пароль"><br>
-    <label for="number">Ваше телефон:</label>
-    <input type="number" name="number" placeholder="8-999-999-99-99"><br>
-    Нам нужно узнать о вас как можно больше!<br>
-    Ваш любимый цвет:
-    <select>
-        <option value="GR">Зеленый</option>
-        <option value="RE">Красный</option>
-        <option value="BL">Синий</option>
-    </select><br>
-    Ваш пол: <br>
-    <input type="radio" name="pol" checked>Mужчина<br>
-    <input type="radio" name="pol">Женщина <br>
-    Ваши увлечения: <br>
-    Спорт <input type="checkbox"><br>
-    IT <input type="checkbox"><br>
-    Музыка <input type="checkbox"><br>
-    <input type="submit" name="button" value="Послать">
-    <input type="reset" name="button" value="Отменить ввод">
-</form>
-<hr>
+            <input type="submit" name="button" value="Послать">
+            <input type="reset" name="button" value="Отменить ввод">
+        </form>
+    </div>
+
+    <hr>
+</main>
+
 <footer>
-
     <a href="https://geekbrains.ru" target="_blank">Geekbrains</a><br>
     Все права защищены &copy;&nbsp;Свиридов Владимир&nbsp;2019
 </footer>
